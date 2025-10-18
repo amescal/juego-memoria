@@ -1,6 +1,72 @@
 .card {
-    /* define aquí los estilos 
-       para el elemento card */        
+    -fx-background-image: url(assets/interfaz/reversoCarta.png);
+    -fx-border-radius: 10px;
+    -fx-background-size: cover;
+    -fx-background-insets: 20px;
+}
+
+.card:hover {
+    -fx-opacity: 0.7;
+}
+
+.logo:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.fondo {
+    -fx-background-image: url(assets/interfaz/ladrillos.png);
+    -fx-background-size: cover;
+}
+
+.texto_intentos {
+    -fx-font-size:65px;
+}
+
+.intentos {
+    -fx-font-size:100px;
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 2, 2, 2, 2);
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(4, 107, 90);
+}
+
+.texto_tiempo {
+    -fx-font-size:65px;
+}
+
+.tiempo_juego {
+    -fx-font-size:100px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(150, 11, 11);
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 2, 2, 2, 2);
+}
+
+.boton_comenzar {
+    -fx-background-color: rgb(4, 107, 90);
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 13px;
+    -fx-border-width: 5px;
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 2, 2, 2, 2);
+}
+
+.boton_comenzar:hover {
+    -fx-background-color: rgb(68, 187, 167)
+}
+
+.boton_salir {
+    -fx-background-color: rgb(150, 11, 11);
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 13px;
+    -fx-border-width: 5px;
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0), 2, 2, 2, 2);
+}
+
+.boton_salir:hover {
+    -fx-background-color: rgb(248, 58, 58);
 }
 
 /* resto de estilos (define un mínmo de 15 reglas)*/
