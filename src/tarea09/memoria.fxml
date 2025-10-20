@@ -1,5 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea09.MemoriaController" />
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" styleClass="fondo" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea09.MemoriaController">
+   <children>
+      <StackPane prefHeight="1000.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane fx:id="tablero" alignment="CENTER" hgap="5.0" prefHeight="1000.0" prefWidth="1000.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Button fx:id="carta0" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta1" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="1">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta2" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="2">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta3" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="3">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta4" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.rowIndex="1">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta5" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta6" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta7" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta8" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.rowIndex="2">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta9" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta10" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta11" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta12" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.rowIndex="3">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta13" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta14" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+                  <Button fx:id="carta15" alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#mostrarContenidoCasilla" prefHeight="242.0" prefWidth="242.0" styleClass="card" stylesheets="@estilos.css" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis></Button>
+               </children>
+            </GridPane>
+            <ImageView fx:id="victoria" fitHeight="1000.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@assets/interfaz/victoria_gatuna.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="-35.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="600.0" prefHeight="1000.0" prefWidth="524.0" stylesheets="@estilos.css" vgap="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true" styleClass="logo">
+               <image>
+                  <Image url="@assets/interfaz/logo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="25.0" top="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" GridPane.rowIndex="3">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#reiniciarJuego" prefHeight="50.0" prefWidth="270.0" snapToPixel="false" styleClass="boton_comenzar" stylesheets="@estilos.css" text="Comenzar de nuevo" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#salir" prefHeight="50.0" prefWidth="270.0" styleClass="boton_salir" stylesheets="@estilos.css" text="Salir del juego" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="12.0" prefWidth="272.0" scaleShape="false" spacing="10.0" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="114.0" prefWidth="289.0" styleClass="texto_tiempo" stylesheets="@estilos.css" text="Tiempo:" textAlignment="CENTER">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label fx:id="tiempoJuego" styleClass="tiempo_juego" stylesheets="@estilos.css" text="0">
+                     <padding>
+                        <Insets bottom="-10.0" top="-40.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="texto_intentos" stylesheets="@estilos.css" text="Intentos:">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label fx:id="intentos" alignment="CENTER" styleClass="intentos" stylesheets="@estilos.css" text="0">
+                     <padding>
+                        <Insets bottom="-10.0" top="-40.0" />
+                     </padding></Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
