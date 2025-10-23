@@ -10,7 +10,7 @@ import javafx.scene.Parent;
 
 /**
  * Juego de Memoria. Clase lanzadora
- * @author INDICAR NOMBRE DEL ALUMNO
+ * @author Ana Mesones Calvillo
  */
 
 public class Principal extends Application {
@@ -19,7 +19,7 @@ public class Principal extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("memoria.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("Memory GAME! - Programación DAWD/DAMD - Curso 23/24");
+        stage.setTitle("It's a Match! - Programación DAWD/DAMD - Curso 23/24");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
