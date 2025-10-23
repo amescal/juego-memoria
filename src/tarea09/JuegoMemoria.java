@@ -14,7 +14,7 @@ public class JuegoMemoria {
     private int parejasDescubiertas = 0;
 
     // si quieres definir distintos tipos de juego puedes hacerlo aquí
-    private String [] tipo = { "escudos", "personas", "plantas" };
+    private String [] tipo = { "memes", "charlie", "totoro" };
 
     private final ArrayList<String> cartas = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16" ));
     private ArrayList<String> tablero;
@@ -69,6 +69,6 @@ public class JuegoMemoria {
     }
     
     public String getTipoPartida(){
-        return this.tipo[ (int)(Math.random()*3) ] ;
+        return this.tipo[ (int)(Math.random()*tipo.length) ] ;
     }
 }
